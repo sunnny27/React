@@ -47,9 +47,20 @@ function Study(){
                 return <span key={index}>{loop.name}</span>;
                 } else {
                 return <span key={index}>{loop.name}, </span>;
-                }
+                } // map 반복문
             })}
             </p>
+
+            {/* <p>우리 반을 소개합니다.🌸</p>
+                <p>우리 반의 이름들 :
+                     {우리반소개.map((loop, index) => {
+                return (
+                    우리반소개.length === index + 1 ?
+                    <span key={index}>{loop.name} </span> :
+                    <span key={index}>{loop.name}, </span>
+                    )
+                })}
+      </p> */}
             {/* <p className="fw-bold text-primary">우리반 이름들: 
             {우리반소개.map((loop, index) =>{
                 return <span> {loop.name}, </span>
